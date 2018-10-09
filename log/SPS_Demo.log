@@ -1,0 +1,980 @@
+2018-10-09 10:39:27 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 9356 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:39:27 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:39:27 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40ef3420: startup date [Tue Oct 09 10:39:27 IST 2018]; root of context hierarchy
+2018-10-09 10:39:29 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d2c2458] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:39:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (https)
+2018-10-09 10:39:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:39:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:39:29 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:39:29 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:39:29 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:39:29 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:39:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:39:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:39:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:39:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:39:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:39:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:39:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:39:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 10 ms.
+2018-10-09 10:39:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:39:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 4 ms.
+2018-10-09 10:39:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:39:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:39:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:39:31 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:39:31 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:39:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:39:32 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8085]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8085]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.capgemini.SpsDemoApplication.main(SpsDemoApplication.java:10)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.lang.IllegalArgumentException: C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\keystore.jks (The system cannot find the file specified)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:244)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\keystore.jks (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:89)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:140)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:204)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:184)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	... 19 common frames omitted
+2018-10-09 10:39:32 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-10-09 10:39:32 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-09 10:39:32 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8085 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8085, or configure this application to listen on another port.
+
+2018-10-09 10:39:32 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@40ef3420: startup date [Tue Oct 09 10:39:27 IST 2018]; root of context hierarchy
+2018-10-09 10:39:32 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 10:39:32 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 10:39:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 10:39:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 10:39:55 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 2176 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:39:55 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:39:55 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 10:39:55 IST 2018]; root of context hierarchy
+2018-10-09 10:39:56 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca3b6b10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:39:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (https)
+2018-10-09 10:39:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:39:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:39:57 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:39:57 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:39:57 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:39:57 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:39:57 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:39:57 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:39:57 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:39:57 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:39:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:39:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:39:58 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:39:58 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 10 ms.
+2018-10-09 10:39:58 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:39:58 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 5 ms.
+2018-10-09 10:40:00 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:40:00 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:40:00 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:40:00 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:40:00 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:40:00 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:40:00 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8086]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8086]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.capgemini.SpsDemoApplication.main(SpsDemoApplication.java:10)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.lang.IllegalArgumentException: C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\keystore.jks (The system cannot find the file specified)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:244)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\keystore.jks (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:89)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:140)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:204)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:184)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	... 19 common frames omitted
+2018-10-09 10:40:00 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-10-09 10:40:00 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-09 10:40:00 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8086 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8086, or configure this application to listen on another port.
+
+2018-10-09 10:40:00 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 10:39:55 IST 2018]; root of context hierarchy
+2018-10-09 10:40:00 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 10:40:00 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 10:40:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 10:40:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 10:40:15 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 14596 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:40:15 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:40:15 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 10:40:15 IST 2018]; root of context hierarchy
+2018-10-09 10:40:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1b6933ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:40:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (https)
+2018-10-09 10:40:17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:40:17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:40:18 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:40:18 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:40:18 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:40:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:40:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:40:18 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:40:18 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 10 ms.
+2018-10-09 10:40:18 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:40:18 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 4 ms.
+2018-10-09 10:40:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:40:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:40:19 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:40:19 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:40:19 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:40:19 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:40:20 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8086]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8086]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.capgemini.SpsDemoApplication.main(SpsDemoApplication.java:10)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.lang.IllegalArgumentException: C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\keystore.jks (The system cannot find the file specified)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:244)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\keystore.jks (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:89)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:140)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:204)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:184)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	... 19 common frames omitted
+2018-10-09 10:40:20 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2018-10-09 10:40:20 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-10-09 10:40:20 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8086 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8086, or configure this application to listen on another port.
+
+2018-10-09 10:40:20 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 10:40:15 IST 2018]; root of context hierarchy
+2018-10-09 10:40:20 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 10:40:20 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 10:40:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 10:40:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 10:41:37 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 2968 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:41:37 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:41:37 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 10:41:37 IST 2018]; root of context hierarchy
+2018-10-09 10:41:39 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$187442d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:41:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 10:41:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:41:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:41:39 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:41:40 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:41:40 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:41:40 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:41:40 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:41:40 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:41:40 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:41:40 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:41:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:41:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:41:40 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:41:40 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 9 ms.
+2018-10-09 10:41:40 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:41:40 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 3 ms.
+2018-10-09 10:41:41 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:41:41 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:41:41 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:41:41 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:41:41 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:41:41 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:41:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt1'
+2018-10-09 10:41:41 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.617 seconds (JVM running for 5.527)
+2018-10-09 10:42:56 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 10:44:15 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 10:44:15 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 10:41:37 IST 2018]; root of context hierarchy
+2018-10-09 10:44:15 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 10:44:15 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 10:44:15 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 10:44:15 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 10:45:32 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 2788 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:45:32 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:45:32 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3835c46: startup date [Tue Oct 09 10:45:32 IST 2018]; root of context hierarchy
+2018-10-09 10:45:33 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a572fb8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:45:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 10:45:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:45:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:45:34 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:45:34 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:45:34 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:45:34 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:45:34 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:45:34 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:45:34 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:45:34 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:45:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:45:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:45:34 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:45:34 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 10 ms.
+2018-10-09 10:45:34 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:45:34 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 3 ms.
+2018-10-09 10:45:36 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:45:36 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:45:36 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:45:36 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:45:36 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:45:36 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:45:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt1'
+2018-10-09 10:45:36 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.639 seconds (JVM running for 5.544)
+2018-10-09 10:45:46 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 10:46:04 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 10:46:04 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3835c46: startup date [Tue Oct 09 10:45:32 IST 2018]; root of context hierarchy
+2018-10-09 10:46:04 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 10:46:04 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 10:46:04 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 10:46:04 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 10:46:22 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 15456 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:46:22 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:46:22 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f058f00: startup date [Tue Oct 09 10:46:22 IST 2018]; root of context hierarchy
+2018-10-09 10:46:24 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1e140ec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:46:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 10:46:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:46:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:46:24 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:46:24 [localhost-startStop-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:46:25 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:46:25 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:46:25 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:46:25 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:46:25 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:46:25 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:46:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:46:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:46:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:46:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 13 ms.
+2018-10-09 10:46:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:46:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 4 ms.
+2018-10-09 10:46:26 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:46:26 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:46:26 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:46:26 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:46:26 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:46:26 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:46:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt1'
+2018-10-09 10:46:26 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.496 seconds (JVM running for 5.39)
+2018-10-09 10:46:32 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[.[/friendmgt1] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 10:47:26 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 10:47:26 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5f058f00: startup date [Tue Oct 09 10:46:22 IST 2018]; root of context hierarchy
+2018-10-09 10:47:26 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 10:47:26 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 10:47:26 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 10:47:26 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 10:49:02 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 16680 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:49:02 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:49:02 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 10:49:02 IST 2018]; root of context hierarchy
+2018-10-09 10:49:04 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$187442d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:49:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 10:49:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:49:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:49:04 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:49:05 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:49:05 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:49:05 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:49:05 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:49:05 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:49:05 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:49:05 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:49:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:49:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:49:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:49:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 9 ms.
+2018-10-09 10:49:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:49:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 4 ms.
+2018-10-09 10:49:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:49:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:49:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:49:06 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:49:06 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:49:06 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:49:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 10:49:06 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.418 seconds (JVM running for 5.33)
+2018-10-09 10:49:20 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 10:53:50 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 10:53:50 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 10:49:02 IST 2018]; root of context hierarchy
+2018-10-09 10:53:50 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 10:53:50 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 10:53:50 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 10:53:50 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 10:54:19 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 1556 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:54:19 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:54:19 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402bba4f: startup date [Tue Oct 09 10:54:19 IST 2018]; root of context hierarchy
+2018-10-09 10:54:20 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eaaa77df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:54:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 10:54:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:54:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:54:21 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:54:21 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:54:21 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:54:21 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:54:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:54:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:54:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:54:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:54:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:54:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:54:21 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:54:21 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 7 ms.
+2018-10-09 10:54:21 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:54:21 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 3 ms.
+2018-10-09 10:54:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:54:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:54:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:54:22 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:54:22 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:54:22 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:54:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 10:54:23 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.359 seconds (JVM running for 5.263)
+2018-10-09 10:54:55 [http-nio-8086-exec-3] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 10:54:56 [http-nio-8086-exec-3] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 10:58:01 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 10:58:01 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@402bba4f: startup date [Tue Oct 09 10:54:19 IST 2018]; root of context hierarchy
+2018-10-09 10:58:01 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 10:58:01 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 10:58:01 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 10:58:01 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 10:58:18 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 15964 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 10:58:18 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 10:58:18 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55b7a4e0: startup date [Tue Oct 09 10:58:18 IST 2018]; root of context hierarchy
+2018-10-09 10:58:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2330cc7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 10:58:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 10:58:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 10:58:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 10:58:20 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 10:58:20 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 10:58:20 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 10:58:20 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 10:58:20 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 10:58:20 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 10:58:20 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 10:58:20 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 10:58:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 10:58:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 10:58:20 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 10:58:20 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 10 ms.
+2018-10-09 10:58:20 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 10:58:20 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 4 ms.
+2018-10-09 10:58:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 10:58:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 10:58:22 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 10:58:22 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 10:58:22 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 10:58:22 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 10:58:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 10:58:22 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.434 seconds (JVM running for 5.396)
+2018-10-09 10:58:29 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 10:58:29 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 11:02:51 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 11:02:51 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@55b7a4e0: startup date [Tue Oct 09 10:58:18 IST 2018]; root of context hierarchy
+2018-10-09 11:02:51 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 11:02:51 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 11:02:51 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 11:02:51 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 11:03:14 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 10204 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 11:03:14 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 11:03:14 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 11:03:14 IST 2018]; root of context hierarchy
+2018-10-09 11:03:16 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a1bfe246] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 11:03:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 11:03:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 11:03:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 11:03:16 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 11:03:16 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 11:03:16 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 11:03:16 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 11:03:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 11:03:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 11:03:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 11:03:16 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 11:03:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 11:03:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 11:03:17 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 11:03:17 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 9 ms.
+2018-10-09 11:03:17 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 11:03:17 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 3 ms.
+2018-10-09 11:03:18 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 11:03:18 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 11:03:18 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 11:03:18 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 11:03:18 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 11:03:18 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 11:03:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 11:03:18 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.777 seconds (JVM running for 5.786)
+2018-10-09 11:03:25 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 11:03:25 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 11:12:06 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 11:12:06 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 11:03:14 IST 2018]; root of context hierarchy
+2018-10-09 11:12:06 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 11:12:06 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 11:12:06 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 11:12:06 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 11:12:33 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 15532 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 11:12:33 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 11:12:34 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 11:12:34 IST 2018]; root of context hierarchy
+2018-10-09 11:12:35 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3fc1c99c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 11:12:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 11:12:36 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 11:12:36 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 11:12:36 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 11:12:36 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 11:12:36 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 11:12:36 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 11:12:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 11:12:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 11:12:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 11:12:36 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 11:12:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 11:12:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 11:12:36 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 11:12:36 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 8 ms.
+2018-10-09 11:12:36 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 11:12:36 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 4 ms.
+2018-10-09 11:12:37 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 11:12:37 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 11:12:37 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 11:12:37 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 11:12:37 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 11:12:37 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 11:12:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 11:12:38 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.517 seconds (JVM running for 5.441)
+2018-10-09 11:12:43 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 11:12:43 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 11:17:57 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 11:17:57 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 11:12:34 IST 2018]; root of context hierarchy
+2018-10-09 11:17:57 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 11:17:57 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 11:17:57 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 11:17:57 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 11:18:02 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on LIN34003030 with PID 14480 (C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO\target\classes started by sanjmand in C:\Users\sanjmand\Downloads\viswanath\viswanath-SPS-DEMO)
+2018-10-09 11:18:02 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 11:18:02 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c767a52: startup date [Tue Oct 09 11:18:02 IST 2018]; root of context hierarchy
+2018-10-09 11:18:04 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca3b6b10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 11:18:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 11:18:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 11:18:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 11:18:04 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\sanjeev\Softwares\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin/server;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/bin;C:/sanjeev/Softwares/jdk1.8.0_144/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;"C:\Users\sanjmand\AppData\Local\Microsoft\WindowsApps;";C:\sanjeev\Softwares\jdk1.8.0_144\bin;%CARBON_HOME%\bin;C:\Users\sanjmand\AppData\Roaming\Cloud Foundry;C:\sanjeev\Softwares\apache-maven-3.5.3\bin;C:\Users\sanjmand\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\3.6\bin;C:\Users\sanjmand\AppData\Local\Programs\Git\cmd;C:\sanjeev\Softwares\sts-bundle\sts-3.8.2.RELEASE;;.]
+2018-10-09 11:18:04 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 11:18:05 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 11:18:05 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 11:18:05 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 11:18:05 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 11:18:05 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 11:18:05 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 11:18:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 11:18:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 11:18:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql]
+2018-10-09 11:18:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/schema.sql] in 8 ms.
+2018-10-09 11:18:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql]
+2018-10-09 11:18:05 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Users/sanjmand/Downloads/viswanath/viswanath-SPS-DEMO/target/classes/data.sql] in 4 ms.
+2018-10-09 11:18:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 11:18:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 11:18:06 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 11:18:06 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 11:18:06 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 11:18:06 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 11:18:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 11:18:06 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.531 seconds (JVM running for 5.452)
+2018-10-09 11:18:10 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 11:18:11 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 11:18:11 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - =======true
+2018-10-09 12:27:05 [main] INFO  c.capgemini.SpsDemoApplicationTests - Starting SpsDemoApplicationTests on DIN8001580 with PID 9820 (started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 12:27:05 [main] INFO  c.capgemini.SpsDemoApplicationTests - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 12:27:07 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$39274d81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 12:27:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 12:27:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 12:27:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 12:27:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 8 ms.
+2018-10-09 12:27:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 12:27:07 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 3 ms.
+2018-10-09 12:27:08 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 12:27:08 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 12:27:08 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 12:27:08 [main] INFO  c.capgemini.SpsDemoApplicationTests - Started SpsDemoApplicationTests in 3.41 seconds (JVM running for 4.503)
+2018-10-09 12:27:08 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 12:27:08 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 12:27:45 [main] INFO  c.capgemini.SpsDemoApplicationTests - Starting SpsDemoApplicationTests on DIN8001580 with PID 7528 (started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 12:27:45 [main] INFO  c.capgemini.SpsDemoApplicationTests - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 12:27:46 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e1ea467] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 12:27:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 12:27:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 12:27:47 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 12:27:47 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 7 ms.
+2018-10-09 12:27:47 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 12:27:47 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 3 ms.
+2018-10-09 12:27:48 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 12:27:48 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 12:27:48 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 12:27:48 [main] INFO  c.capgemini.SpsDemoApplicationTests - Started SpsDemoApplicationTests in 3.263 seconds (JVM running for 4.362)
+2018-10-09 12:27:48 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 12:27:48 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 12:28:10 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on DIN8001580 with PID 2732 (C:\Preeta\Code\SPS-DEMO-master\target\classes started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 12:28:10 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 12:28:10 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@149e0f5d: startup date [Tue Oct 09 12:28:10 IST 2018]; root of context hierarchy
+2018-10-09 12:28:11 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6af2c48e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 12:28:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 12:28:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 12:28:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 12:28:11 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\pamthe\AppData\Local\Microsoft\WindowsApps;C:\Users\pamthe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pamthe\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_181\bin;;C:\Users\pamthe\Downloads\spring-tool-suite-4-4.0.0.RELEASE-e4.9.0-win32.win32.x86_64\sts-4.0.0.RELEASE;;.]
+2018-10-09 12:28:11 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 12:28:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 12:28:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 12:28:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 12:28:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 12:28:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 12:28:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 12:28:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 12:28:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 12:28:11 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 12:28:11 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 7 ms.
+2018-10-09 12:28:11 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 12:28:11 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 3 ms.
+2018-10-09 12:28:12 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 12:28:12 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 12:28:12 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 12:28:12 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 12:28:12 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 12:28:12 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 12:28:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 12:28:12 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 2.367 seconds (JVM running for 3.153)
+2018-10-09 12:36:04 [http-nio-8086-exec-6] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 12:58:14 [http-nio-8086-exec-7] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:479)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-10-09 13:10:27 [http-nio-8086-exec-9] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 13:10:27 [http-nio-8086-exec-9] INFO  c.c.c.FriendManagementController - =======true
+2018-10-09 14:32:07 [RMI TCP Connection(165)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 14:32:07 [RMI TCP Connection(165)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@149e0f5d: startup date [Tue Oct 09 12:28:10 IST 2018]; root of context hierarchy
+2018-10-09 14:32:07 [RMI TCP Connection(165)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 14:32:07 [RMI TCP Connection(165)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 14:32:07 [RMI TCP Connection(165)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 14:32:07 [RMI TCP Connection(165)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 14:32:23 [main] INFO  c.capgemini.SpsDemoApplicationTests - Starting SpsDemoApplicationTests on DIN8001580 with PID 5484 (started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 14:32:23 [main] INFO  c.capgemini.SpsDemoApplicationTests - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 14:32:24 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7f23abeb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 14:32:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 14:32:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 14:32:24 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 14:32:24 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 8 ms.
+2018-10-09 14:32:24 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 14:32:24 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 4 ms.
+2018-10-09 14:32:25 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 14:32:25 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 14:32:25 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 14:32:25 [main] INFO  c.capgemini.SpsDemoApplicationTests - Started SpsDemoApplicationTests in 3.16 seconds (JVM running for 4.258)
+2018-10-09 14:32:26 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 14:32:26 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 14:32:37 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on DIN8001580 with PID 4460 (C:\Preeta\Code\SPS-DEMO-master\target\classes started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 14:32:37 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 14:32:37 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Tue Oct 09 14:32:37 IST 2018]; root of context hierarchy
+2018-10-09 14:32:38 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$26085a56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 14:32:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 14:32:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 14:32:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 14:32:38 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\pamthe\AppData\Local\Microsoft\WindowsApps;C:\Users\pamthe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pamthe\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_181\bin;;C:\Users\pamthe\Downloads\spring-tool-suite-4-4.0.0.RELEASE-e4.9.0-win32.win32.x86_64\sts-4.0.0.RELEASE;;.]
+2018-10-09 14:32:39 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 14:32:39 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 14:32:39 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 14:32:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 14:32:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 14:32:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 14:32:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 14:32:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 14:32:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 14:32:39 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 14:32:39 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 6 ms.
+2018-10-09 14:32:39 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 14:32:39 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 3 ms.
+2018-10-09 14:32:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 14:32:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 14:32:39 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 14:32:39 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 14:32:39 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 14:32:39 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 14:32:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 14:32:40 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 2.339 seconds (JVM running for 3.097)
+2018-10-09 14:41:42 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 14:41:42 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Tue Oct 09 14:32:37 IST 2018]; root of context hierarchy
+2018-10-09 14:41:42 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 14:41:42 [RMI TCP Connection(16)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 14:41:42 [RMI TCP Connection(16)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 14:41:42 [RMI TCP Connection(16)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 14:41:49 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on DIN8001580 with PID 1708 (C:\Preeta\Code\SPS-DEMO-master\target\classes started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 14:41:49 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 14:41:49 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5454d35e: startup date [Tue Oct 09 14:41:49 IST 2018]; root of context hierarchy
+2018-10-09 14:41:50 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$18b51de6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 14:41:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 14:41:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 14:41:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 14:41:50 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\pamthe\AppData\Local\Microsoft\WindowsApps;C:\Users\pamthe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pamthe\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_181\bin;;C:\Users\pamthe\Downloads\spring-tool-suite-4-4.0.0.RELEASE-e4.9.0-win32.win32.x86_64\sts-4.0.0.RELEASE;;.]
+2018-10-09 14:41:50 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 14:41:50 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 14:41:50 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 14:41:50 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 14:41:50 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 14:41:50 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 14:41:50 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 14:41:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 14:41:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 14:41:51 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 14:41:51 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 7 ms.
+2018-10-09 14:41:51 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 14:41:51 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 4 ms.
+2018-10-09 14:42:04 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 14:42:04 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 14:42:04 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 14:42:04 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 14:42:04 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 14:42:04 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 14:42:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 14:42:04 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 14.87 seconds (JVM running for 15.859)
+2018-10-09 14:42:14 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 14:43:46 [http-nio-8086-exec-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-09 14:44:40 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 14:44:40 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5454d35e: startup date [Tue Oct 09 14:41:49 IST 2018]; root of context hierarchy
+2018-10-09 14:44:40 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 14:44:40 [RMI TCP Connection(12)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 14:44:40 [RMI TCP Connection(12)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 14:44:40 [RMI TCP Connection(12)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 14:52:28 [main] INFO  c.capgemini.SpsDemoApplicationTests - Starting SpsDemoApplicationTests on DIN8001580 with PID 7620 (started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 14:52:28 [main] INFO  c.capgemini.SpsDemoApplicationTests - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 14:52:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$66236c9c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 14:52:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 14:52:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 14:52:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 14:52:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 9 ms.
+2018-10-09 14:52:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 14:52:30 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 9 ms.
+2018-10-09 14:52:32 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 14:52:32 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 14:52:32 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 14:52:32 [main] INFO  c.capgemini.SpsDemoApplicationTests - Started SpsDemoApplicationTests in 3.677 seconds (JVM running for 4.768)
+2018-10-09 14:52:32 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 14:52:32 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 14:53:04 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on DIN8001580 with PID 632 (C:\Preeta\Code\SPS-DEMO-master\target\classes started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 14:53:04 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 14:53:04 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47d90b9e: startup date [Tue Oct 09 14:53:04 IST 2018]; root of context hierarchy
+2018-10-09 14:53:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f3acb87a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 14:53:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 14:53:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 14:53:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 14:53:05 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\pamthe\AppData\Local\Microsoft\WindowsApps;C:\Users\pamthe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pamthe\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_181\bin;;C:\Users\pamthe\Downloads\spring-tool-suite-4-4.0.0.RELEASE-e4.9.0-win32.win32.x86_64\sts-4.0.0.RELEASE;;.]
+2018-10-09 14:53:06 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 14:53:06 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 14:53:06 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 14:53:06 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 14:53:06 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 14:53:06 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 14:53:06 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 14:53:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 14:53:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 14:53:06 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 14:53:06 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 6 ms.
+2018-10-09 14:53:06 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 14:53:06 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 3 ms.
+2018-10-09 14:53:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 14:53:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 14:53:07 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 14:53:07 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 14:53:07 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 14:53:07 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 14:53:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 14:53:07 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 2.385 seconds (JVM running for 3.128)
+2018-10-09 14:54:24 [http-nio-8086-exec-2] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 14:54:25 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 14:54:25 [http-nio-8086-exec-2] INFO  c.c.c.FriendManagementController - =======true
+2018-10-09 14:55:31 [http-nio-8086-exec-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-10-09 15:33:14 [RMI TCP Connection(46)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 15:33:14 [RMI TCP Connection(46)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47d90b9e: startup date [Tue Oct 09 14:53:04 IST 2018]; root of context hierarchy
+2018-10-09 15:33:14 [RMI TCP Connection(46)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 15:33:14 [RMI TCP Connection(46)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 15:33:14 [RMI TCP Connection(46)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 15:33:14 [RMI TCP Connection(46)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 15:33:30 [main] INFO  c.capgemini.SpsDemoApplicationTests - Starting SpsDemoApplicationTests on DIN8001580 with PID 8136 (started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 15:33:30 [main] INFO  c.capgemini.SpsDemoApplicationTests - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 15:33:31 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$433f2f1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 15:33:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 15:33:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 15:33:31 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 15:33:31 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 11 ms.
+2018-10-09 15:33:31 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 15:33:31 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 6 ms.
+2018-10-09 15:33:33 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 15:33:33 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 15:33:33 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 15:33:33 [main] INFO  c.capgemini.SpsDemoApplicationTests - Started SpsDemoApplicationTests in 3.523 seconds (JVM running for 4.531)
+2018-10-09 15:33:33 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 15:33:33 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 15:33:44 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on DIN8001580 with PID 828 (C:\Preeta\Code\SPS-DEMO-master\target\classes started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 15:33:44 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 15:33:44 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f627d13: startup date [Tue Oct 09 15:33:44 IST 2018]; root of context hierarchy
+2018-10-09 15:33:45 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$662eb5e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 15:33:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 15:33:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 15:33:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 15:33:45 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\pamthe\AppData\Local\Microsoft\WindowsApps;C:\Users\pamthe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pamthe\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_181\bin;;C:\Users\pamthe\Downloads\spring-tool-suite-4-4.0.0.RELEASE-e4.9.0-win32.win32.x86_64\sts-4.0.0.RELEASE;;.]
+2018-10-09 15:33:45 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 15:33:45 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 15:33:45 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 15:33:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 15:33:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 15:33:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 15:33:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 15:33:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 15:33:45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 15:33:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 15:33:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 7 ms.
+2018-10-09 15:33:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 15:33:45 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 3 ms.
+2018-10-09 15:33:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 15:33:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 15:33:52 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 15:33:52 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 15:33:52 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 15:33:52 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 15:33:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 15:33:52 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 8.474 seconds (JVM running for 9.443)
+2018-10-09 15:35:06 [http-nio-8086-exec-10] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 15:35:06 [http-nio-8086-exec-10] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 15:35:06 [http-nio-8086-exec-10] INFO  c.c.c.FriendManagementController - =======true
+2018-10-09 15:53:53 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 15:53:53 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f627d13: startup date [Tue Oct 09 15:33:44 IST 2018]; root of context hierarchy
+2018-10-09 15:53:53 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 15:53:53 [RMI TCP Connection(28)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 15:53:53 [RMI TCP Connection(28)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 15:53:53 [RMI TCP Connection(28)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 15:54:12 [main] INFO  c.capgemini.SpsDemoApplicationTests - Starting SpsDemoApplicationTests on DIN8001580 with PID 5484 (started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 15:54:12 [main] INFO  c.capgemini.SpsDemoApplicationTests - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 15:54:13 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f48e74a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 15:54:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 15:54:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 15:54:13 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 15:54:13 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 8 ms.
+2018-10-09 15:54:13 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 15:54:13 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 2 ms.
+2018-10-09 15:54:15 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 15:54:15 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 15:54:15 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 15:54:15 [main] INFO  c.capgemini.SpsDemoApplicationTests - Started SpsDemoApplicationTests in 3.506 seconds (JVM running for 4.648)
+2018-10-09 15:54:15 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 15:54:15 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 15:54:25 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on DIN8001580 with PID 6736 (C:\Preeta\Code\SPS-DEMO-master\target\classes started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 15:54:25 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 15:54:25 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3561c410: startup date [Tue Oct 09 15:54:25 IST 2018]; root of context hierarchy
+2018-10-09 15:54:28 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b157cb91] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 15:54:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 15:54:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 15:54:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 15:54:28 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\pamthe\AppData\Local\Microsoft\WindowsApps;C:\Users\pamthe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pamthe\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_181\bin;;C:\Users\pamthe\Downloads\spring-tool-suite-4-4.0.0.RELEASE-e4.9.0-win32.win32.x86_64\sts-4.0.0.RELEASE;;.]
+2018-10-09 15:54:28 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 15:54:29 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 15:54:29 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 15:54:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 15:54:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 15:54:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 15:54:29 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 15:54:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 15:54:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 15:54:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 15:54:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 7 ms.
+2018-10-09 15:54:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 15:54:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 3 ms.
+2018-10-09 15:54:30 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 15:54:30 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 15:54:30 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 15:54:30 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 15:54:30 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 15:54:30 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 15:54:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 15:54:30 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 5.069 seconds (JVM running for 6.032)
+2018-10-09 15:55:13 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 15:55:13 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 15:55:13 [http-nio-8086-exec-1] INFO  c.c.c.FriendManagementController - =======true
+2018-10-09 15:57:55 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 15:57:55 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - =======true
+2018-10-09 15:58:44 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 15:58:44 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3561c410: startup date [Tue Oct 09 15:54:25 IST 2018]; root of context hierarchy
+2018-10-09 15:58:44 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 15:58:44 [RMI TCP Connection(14)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 15:58:44 [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 15:58:44 [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 16:01:49 [main] INFO  c.capgemini.SpsDemoApplicationTests - Starting SpsDemoApplicationTests on DIN8001580 with PID 10512 (started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 16:01:49 [main] INFO  c.capgemini.SpsDemoApplicationTests - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 16:01:50 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$99ab4eac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 16:01:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 16:01:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 16:01:51 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 16:01:51 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 8 ms.
+2018-10-09 16:01:51 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 16:01:51 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 4 ms.
+2018-10-09 16:01:52 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 16:01:52 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 16:01:52 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 16:01:52 [main] INFO  c.capgemini.SpsDemoApplicationTests - Started SpsDemoApplicationTests in 3.215 seconds (JVM running for 4.257)
+2018-10-09 16:01:52 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 16:01:52 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2018-10-09 16:02:02 [main] INFO  com.capgemini.SpsDemoApplication - Starting SpsDemoApplication on DIN8001580 with PID 4108 (C:\Preeta\Code\SPS-DEMO-master\target\classes started by pamthe in C:\Preeta\Code\SPS-DEMO-master)
+2018-10-09 16:02:02 [main] INFO  com.capgemini.SpsDemoApplication - The following profiles are active: swagger-enabled-for-qa
+2018-10-09 16:02:03 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e005dc9: startup date [Tue Oct 09 16:02:03 IST 2018]; root of context hierarchy
+2018-10-09 16:02:03 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79e8ce0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-09 16:02:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8086 (http)
+2018-10-09 16:02:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-10-09 16:02:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-09 16:02:04 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\CapgeminiScripts\Support Tools\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\pamthe\AppData\Local\Microsoft\WindowsApps;C:\Users\pamthe\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\pamthe\AppData\Roaming\npm;C:\Program Files\Java\jdk1.8.0_181\bin;;C:\Users\pamthe\Downloads\spring-tool-suite-4-4.0.0.RELEASE-e4.9.0-win32.win32.x86_64\sts-4.0.0.RELEASE;;.]
+2018-10-09 16:02:04 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring embedded WebApplicationContext
+2018-10-09 16:02:04 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-10-09 16:02:04 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet webServlet mapped to [/h2/*]
+2018-10-09 16:02:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-09 16:02:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-09 16:02:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-09 16:02:04 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-09 16:02:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-10-09 16:02:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-10-09 16:02:04 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql]
+2018-10-09 16:02:04 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/schema.sql] in 7 ms.
+2018-10-09 16:02:04 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql]
+2018-10-09 16:02:04 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/C:/Preeta/Code/SPS-DEMO-master/target/classes/data.sql] in 4 ms.
+2018-10-09 16:02:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-10-09 16:02:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-09 16:02:05 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-09 16:02:05 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-10-09 16:02:05 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-10-09 16:02:05 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-10-09 16:02:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8086 (http) with context path '/friendmgt'
+2018-10-09 16:02:05 [main] INFO  com.capgemini.SpsDemoApplication - Started SpsDemoApplication in 4.877 seconds (JVM running for 5.837)
+2018-10-09 16:02:47 [http-nio-8086-exec-8] INFO  o.a.c.c.C.[.[localhost].[/friendmgt] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-09 16:02:47 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - ====logger test =======
+2018-10-09 16:02:47 [http-nio-8086-exec-8] INFO  c.c.c.FriendManagementController - =======true
+2018-10-09 17:03:59 [RMI TCP Connection(70)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2018-10-09 17:03:59 [RMI TCP Connection(70)-127.0.0.1] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e005dc9: startup date [Tue Oct 09 16:02:03 IST 2018]; root of context hierarchy
+2018-10-09 17:03:59 [RMI TCP Connection(70)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2018-10-09 17:03:59 [RMI TCP Connection(70)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2018-10-09 17:03:59 [RMI TCP Connection(70)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2018-10-09 17:03:59 [RMI TCP Connection(70)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
