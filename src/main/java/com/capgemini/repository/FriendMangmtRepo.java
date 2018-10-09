@@ -203,14 +203,18 @@ public class FriendMangmtRepo {
 					//unsubscribe
 					al.remove(target);
 					//prepare csv
-					String[] temp = new String[al.size()];
-					String listString=Arrays.toString(al.toArray(temp));
-					System.out.println("listString ="+listString);
+					String joinedString = al.toString().replaceAll("[\\[.\\]]", "");
+					System.out.println("listString ="+joinedString);
 					//update db
 					result = jdbcTemplate.update("update friendmanagement " + " set subscription = ? " + " where email = ?",
 							new Object[] {
-									listString, requestor
+									joinedString, requestor
+									
+					
+									
 					});
+					//Now add entry in history table
+					updateHistoryTable(requestor,target,"removed");
 					if(result==1) {
 						fmError.setStatus("Success");
 						fmError.setErrorDescription("UnSubscribed successfully");
@@ -289,6 +293,23 @@ public class FriendMangmtRepo {
 		 });
 	}
 
+	
+	private void updateHistoryTable(String requestor, String target,String status) {
+		System.out.println("in request");
+    	String sql = "INSERT into friendmanagementhistory(email, subscription, status, updated_timestamp) VALUES (?, ?, ?, ?, )";
+        jdbcTemplate.update(sql, new PreparedStatementSetter() {
+
+			@Override
+			public void setValues(PreparedStatement stmt) throws SQLException {
+                stmt.setString(1, requestor);
+                stmt.setString(2, target);
+                stmt.setString(3, status);
+                stmt.setTimestamp(4, new java.sql.Timestamp(new Date().getTime()));
+				
+			}
+        });
+	}
+	
  private void connectFriends(String requestor, String target){
 	 int result;
 	 result = jdbcTemplate.update("update friendmanagement " + " set friend_list = ?" + " where email = ?",
