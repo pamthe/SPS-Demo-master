@@ -1,6 +1,5 @@
 package com.capgemini.repository;
 
-import java.io.IOException;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -8,32 +7,30 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import javax.validation.constraints.Email;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.stereotype.Repository;
 
 import com.capgemini.validation.FriendManagementValidation;
 import com.capgemini.exceptionhandling.ResourceNotFoundException;
-import com.capgemini.model.ResponseUser;
-import com.capgemini.model.Subscriber;
 import com.capgemini.model.UserEmail;
 import com.capgemini.model.UserFriandsListResponse;
 
 @Repository
 public class FriendMangmtRepo {
 
-	@Autowired
+	//@Autowired
 	FriendManagementValidation fmError;
 
-	@Autowired
+	//@Autowired
 	JdbcTemplate jdbcTemplate;
 
-
+	@Autowired public FriendMangmtRepo(FriendManagementValidation fmError,JdbcTemplate jdbcTemplate) {
+		this.fmError=fmError;
+		this.jdbcTemplate=jdbcTemplate;
+	}
 
 	//public FriendManagementValidation addNewRequest(String requestor , String target){
 	
@@ -182,8 +179,11 @@ public class FriendMangmtRepo {
 
 
 		int result;
-		if(subscribers.isEmpty()) {
+		if(subscribers==null || subscribers.isEmpty()) {
 			//throw some error
+			fmError.setStatus("Failed");
+			fmError.setErrorDescription("");
+			return fmError;
 		}else {
 
 			String[] subs = subscribers.split(",");

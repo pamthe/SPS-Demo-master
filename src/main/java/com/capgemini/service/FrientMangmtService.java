@@ -12,8 +12,11 @@ import com.capgemini.validation.FriendManagementValidation;
 @Service
 public class FrientMangmtService {
 
-	@Autowired
 	FriendMangmtRepo friendMangmtRepo;
+	
+	@Autowired public FrientMangmtService(FriendMangmtRepo friendMangmtRepo) {
+		this.friendMangmtRepo=friendMangmtRepo;
+	}
 
 	public boolean addNewFriendConnection(com.capgemini.model.UserRequest userReq) {
 		System.out.println("-------333333-------------");

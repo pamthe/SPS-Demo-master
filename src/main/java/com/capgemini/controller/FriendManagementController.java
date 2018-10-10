@@ -1,7 +1,5 @@
 package com.capgemini.controller;
 
-import java.util.List;
-
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
 
@@ -38,12 +36,16 @@ public class FriendManagementController {
 	private static final int CODE_SUCCESS = 100;
 	private static final int AUTH_FAILURE = 102;
 
-	@Autowired
+	//@Autowired
 	public FrientMangmtService frndMngtServc;
 
-	@Autowired
+	//@Autowired
 	FriendManagementValidation fmError;
 
+	@Autowired public FriendManagementController(FrientMangmtService frndMngtServc,FriendManagementValidation fmError) {
+		this.frndMngtServc=frndMngtServc;
+		this.fmError=fmError;
+	}
 
 	@RequestMapping(value = "/create", method = RequestMethod.POST)
 	public ResponseEntity<BaseResponse> newFriendConnection(@Valid @RequestBody com.capgemini.model.UserRequest userReq, BindingResult result)throws ResourceNotFoundException {
@@ -178,9 +180,9 @@ public class FriendManagementController {
 	public ResponseEntity<FriendManagementValidation> subscribeFriend(@Valid @RequestBody com.capgemini.model.Subscriber subscriber, BindingResult result)throws ResourceNotFoundException {
 
 		//Validation
-		if(result.hasErrors()) {
-			return handleValidation(result);
-		}
+		//if(result.hasErrors()) {
+			 handleValidation(result);
+		//}
 
 		ResponseEntity<FriendManagementValidation> responseEntity = null;
 
@@ -211,16 +213,16 @@ public class FriendManagementController {
 		}
 
 		ResponseEntity<FriendManagementValidation> responseEntity = null;
-
+		FriendManagementValidation fmv=null;
 		try {
-			FriendManagementValidation fmv =frndMngtServc.unSubscribeTargetFriend(subscriber);
+			fmv =frndMngtServc.unSubscribeTargetFriend(subscriber);
 			if(fmv.getStatus().equalsIgnoreCase("success")) {
 				responseEntity = new ResponseEntity<FriendManagementValidation>(fmv, HttpStatus.OK);
 			}else {
 				responseEntity = new ResponseEntity<FriendManagementValidation>(fmv, HttpStatus.BAD_REQUEST);
 			}
 		}catch(Exception e) {
-
+			responseEntity = new ResponseEntity<FriendManagementValidation>(fmv, HttpStatus.BAD_REQUEST);
 		}
 
 		return responseEntity;
@@ -233,6 +235,7 @@ public class FriendManagementController {
 	 * @return
 	 */
 	private ResponseEntity<FriendManagementValidation> handleValidation(BindingResult result) {
+		if(fmError!=null) {
 		fmError.setStatus("Failed");
 		if(result.getFieldError("requestor") != null && result.getFieldError("target") != null) {
 			fmError.setErrorDescription(result.getFieldError("requestor").getDefaultMessage()+" "+result.getFieldError("target").getDefaultMessage());
@@ -241,6 +244,7 @@ public class FriendManagementController {
 		}else{
 			fmError.setErrorDescription(result.getFieldError("requestor").getDefaultMessage());
 
+		}
 		}
 		return new ResponseEntity<FriendManagementValidation>(fmError, HttpStatus.BAD_REQUEST);
 
